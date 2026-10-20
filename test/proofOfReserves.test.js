@@ -56,7 +56,6 @@ describe("ProofOfReserves Verification and Attestation Test Suite", function () 
   });
 
   it("2. Valid user, correct balance and proof: verify returns true", async function () {
-    // Demo user Alice (index 41 in dataset or by finding userId 1042)
     const demoIndex = customers.findIndex((c) => c.userId === 1042);
     expect(demoIndex).to.be.greaterThanOrEqual(0);
 
@@ -91,7 +90,6 @@ describe("ProofOfReserves Verification and Attestation Test Suite", function () 
     const demoUser = customers[demoIndex];
     const proof = tree.getProof(demoIndex);
 
-    // Using someone else's user ID with Alice's balance and proof
     const impostorUserId = 9999n;
 
     const isValid = await proofOfReserves.verify(
@@ -118,7 +116,7 @@ describe("ProofOfReserves Verification and Attestation Test Suite", function () 
     const oldAttestation = await proofOfReserves.attestations(1);
     expect(oldAttestation.root).to.equal(root);
 
-    // Create a modified dataset for epoch 2 (e.g. Alice deposits 50,000 more)
+    // Create a modified dataset for epoch 2 (Alice deposits 50,000 more)
     const modifiedCustomers = customers.map((c) =>
       c.userId === 1042 ? { ...c, balance: c.balance + 50000 } : c
     );
@@ -167,5 +165,74 @@ describe("ProofOfReserves Verification and Attestation Test Suite", function () 
       250000n
     );
     expect(isOldValid).to.equal(false);
+  });
+
+  it("7. Historical query: verifyForEpoch preserves Epoch 1 verification even after Epoch 2 is active", async function () {
+    const demoIndex = customers.findIndex((c) => c.userId === 1042);
+    const demoUser = customers[demoIndex];
+    const epoch1Proof = tree.getProof(demoIndex);
+
+    // Advance to Epoch 2 with different root
+    const dummyRoot = ethers.hexlify(ethers.randomBytes(32));
+    await proofOfReserves.publishRoot(dummyRoot, 9999999n);
+
+    // verify() against current epoch (Epoch 2) fails
+    const isValidCurrent = await proofOfReserves.verify(epoch1Proof, demoUser.userId, demoUser.balance);
+    expect(isValidCurrent).to.equal(false);
+
+    // verifyForEpoch(1) targets the immutable historical epoch and succeeds
+    const isValidHistorical = await proofOfReserves.verifyForEpoch(1n, epoch1Proof, demoUser.userId, demoUser.balance);
+    expect(isValidHistorical).to.equal(true);
+  });
+
+  it("8. getLatestAttestation returns correct tuple matching contract state", async function () {
+    const [attRoot, attLiabilities, attTimestamp, currentEpoch] =
+      await proofOfReserves.getLatestAttestation();
+
+    expect(attRoot).to.equal(root);
+    expect(attLiabilities).to.equal(totalLiabilities);
+    expect(attTimestamp).to.be.greaterThan(0n);
+    expect(currentEpoch).to.equal(1n);
+  });
+
+  it("9. R5 Gap Analysis: publishRoot accepts unconstrained totalLiabilities (documents plain Merkle limitation)", async function () {
+    // A plain Merkle tree binds inclusion, but not the sum total.
+    // An exchange could declare 1 unit even though customer leaves sum to millions:
+    const fakeLiabilities = 1n;
+    const testRoot = ethers.hexlify(ethers.randomBytes(32));
+
+    await expect(proofOfReserves.publishRoot(testRoot, fakeLiabilities))
+      .to.emit(proofOfReserves, "RootPublished");
+
+    const [, recordedLiabilities] = await proofOfReserves.getLatestAttestation();
+    expect(recordedLiabilities).to.equal(1n);
+    // This test proves that plain Merkle trees require Merkle Sum Trees or audits to constrain liabilities!
+  });
+
+  it("10. Corrupted proof element rejection: any altered hash in sibling path is rejected", async function () {
+    const demoIndex = customers.findIndex((c) => c.userId === 1042);
+    const demoUser = customers[demoIndex];
+    const proof = [...tree.getProof(demoIndex)];
+
+    // Corrupt the first sibling hash
+    proof[0] = ethers.hexlify(ethers.randomBytes(32));
+
+    const isValid = await proofOfReserves.verify(proof, demoUser.userId, demoUser.balance);
+    expect(isValid).to.equal(false);
+  });
+
+  it("11. Direct on-chain leaf check: publishing a single leaf directly verifies with empty proof []", async function () {
+    const userId = 8888n;
+    const balance = 123456n;
+
+    // Compute expected leaf in JS
+    const leaf = tree.leafHash([userId, balance]);
+
+    // Publish this leaf directly as the root
+    await proofOfReserves.publishRoot(leaf, balance);
+
+    // Verify on-chain with empty proof [] -> confirms contract computes identical leaf
+    const isValid = await proofOfReserves.verify([], userId, balance);
+    expect(isValid).to.equal(true);
   });
 });

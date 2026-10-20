@@ -1,8 +1,9 @@
 {
+  "epoch": 1,
   "root": "0xcb13618d53b00b87799b8ecbbda2d1cb3fe53dff33adc7f2d77ce5a969182f31",
   "totalLiabilities": "5651450",
   "customerCount": 50,
-  "generatedAt": "2026-10-19T09:19:35.378Z",
+  "generatedAt": "2026-10-20T15:46:34.585Z",
   "demoUser": {
     "userId": 1042,
     "name": "Alice_DemoUser",

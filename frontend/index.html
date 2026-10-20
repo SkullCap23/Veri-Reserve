@@ -34,7 +34,7 @@
       <div class="header-status-group">
         <div class="network-pill" id="network-status-pill">
           <span class="indicator-dot" id="network-status-dot"></span>
-          <span id="network-name">Connecting to EVM Node...</span>
+          <span id="network-name">Local Hardhat Dev Chain (Chain ID: 31337 · Single Node Simulation)</span>
         </div>
         <button class="btn-utility" id="speaker-guide-btn">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -93,7 +93,7 @@
     <!-- Left Column: Verification Controls & State Ledger -->
     <div class="left-pane">
 
-      <!-- Panel: On-Chain Commitment Record -->
+      <!-- Panel: On-Chain Commitment Record (R2: Reads directly from contract) -->
       <section class="card" id="card-commitment">
         <div class="card-header">
           <div class="card-title">
@@ -103,34 +103,56 @@
             </svg>
             <span>On-Chain Commitment Record</span>
           </div>
-          <span class="badge-tag onchain">Canonical Ledger</span>
+          <span class="badge-tag onchain">Smart Contract State</span>
         </div>
 
         <div class="data-row-grid">
           <div class="data-box full-span">
             <div class="box-label">
               <span>Canonical Merkle Root (Epoch <span id="epoch-num">1</span>)</span>
-              <button class="copy-link" id="copy-root-btn">Copy Hash</button>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <span id="root-match-badge" style="font-size: 0.65rem; color: #34d399;">Matches tree.json: ✅</span>
+                <button class="copy-link" id="copy-root-btn">Copy Hash</button>
+              </div>
             </div>
-            <div class="box-value cyan" id="onchain-root">Synchronizing state...</div>
+            <div class="box-value cyan" id="onchain-root">Reading from contract...</div>
           </div>
           <div class="data-box">
             <div class="box-label">Total Declared Liabilities</div>
-            <div class="box-value" id="onchain-total">0 USDC</div>
+            <div class="box-value" id="onchain-total">Reading contract...</div>
           </div>
           <div class="data-box">
             <div class="box-label">Block Timestamp</div>
-            <div class="box-value" id="onchain-timestamp">-</div>
+            <div class="box-value" id="onchain-timestamp">Reading contract...</div>
           </div>
           <div class="data-box full-span">
             <div class="box-label">Smart Contract Address (ProofOfReserves.sol)</div>
             <div class="box-value" id="contract-address" style="color: var(--text-secondary); font-size: 0.75rem;">-</div>
           </div>
+
+          <!-- R5 Option A: Admin Cross-Check of Declared Total vs Sum of Leaves -->
+          <div class="data-box full-span" style="background: rgba(255, 255, 255, 0.02); border: 1px dashed var(--border-medium);">
+            <div class="box-label">
+              <span>Admin Cross-Check (Section R5 Option A)</span>
+              <span id="crosscheck-badge" style="color: #34d399; font-weight: 700;">Sum matches declared total: ✅</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-secondary); font-family: var(--font-mono); margin-top: 3px;">
+              <span>Leaf Balances Sum: <strong id="leaf-sum-val" style="color: #fff;">5,651,450 mock USDC</strong></span>
+              <span>Declared On-Chain: <strong id="declared-sum-val" style="color: var(--brand-cyan-light);">5,651,450 mock USDC</strong></span>
+            </div>
+            <div style="font-size: 0.65rem; color: var(--text-tertiary); margin-top: 5px; line-height: 1.35;">
+              <strong>Critical Insight:</strong> In a plain Merkle tree, the root commits to inclusion, not total liabilities. The declared total is unconstrained on-chain (proven in Test #9). Merkle Sum Trees solve this.
+            </div>
+          </div>
         </div>
 
+        <!-- R3: Real On-Chain Epoch 2 Transaction -->
         <button class="btn-epoch-action" id="publish-epoch2-btn">
-          Advance Attestation Epoch (Simulate Periodic Audit Epoch 2)
+          Publish Epoch 2 Attestation (Alice +50,000 mock USDC · On-Chain Tx)
         </button>
+        <div id="epoch2-tx-meta" style="display: none; margin-top: 0.65rem; font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-secondary); background: rgba(0, 0, 0, 0.35); padding: 0.65rem; border-radius: 4px; border: 1px solid var(--border-subtle);">
+          <!-- Populated dynamically via JS -->
+        </div>
       </section>
 
       <!-- Panel: Client Liability Verification Portal -->
@@ -144,13 +166,13 @@
             <span>Client Liability Verification Portal</span>
           </div>
           <button class="preset-chip" id="load-demo-user-btn">
-            Load Benchmark: Alice (ID: 1042)
+            Load Benchmark: Alice (ID: 1042 · 250,000 mock USDC)
           </button>
         </div>
 
         <div class="field-group">
           <div class="field-label">
-            <span>Select Account (50 In Snapshot)</span>
+            <span>Exchange Admin Ledger (All 50 Accounts)</span>
             <span id="customer-count-badge" style="color: var(--text-tertiary); font-family: var(--font-mono);">50 Records</span>
           </div>
           <select id="customer-select" class="field-select">
@@ -168,13 +190,13 @@
 
         <div class="field-group">
           <div class="field-label">
-            <span>Declared Account Balance (USDC Units)</span>
+            <span>Declared Account Balance (mock USDC units)</span>
             <span style="color: var(--text-tertiary); font-family: var(--font-mono);">Pre-image [1]</span>
           </div>
           <input type="number" id="balance-input" class="field-input" placeholder="250000">
         </div>
 
-        <!-- Forensic Tamper Switch (Avalanche Demo Climax) -->
+        <!-- A3: Multi-Mode Forensic Tamper Module -->
         <div class="tamper-control" id="tamper-container">
           <div class="tamper-meta">
             <div class="tamper-header">
@@ -183,16 +205,25 @@
                 <line x1="12" y1="8" x2="12" y2="12"/>
                 <line x1="12" y1="16" x2="12.01" y2="16"/>
               </svg>
-              <span>INJECT BALANCE DRIFT (+1 UNIT)</span>
+              <span id="tamper-title-text">INJECT BALANCE DRIFT (+1 UNIT)</span>
             </div>
-            <div class="tamper-desc" id="tamper-status-desc">
-              Forensic simulation: Demonstrates collision resistance & avalanche effect (Slide 6).
-            </div>
+            <label class="switch-label">
+              <input type="checkbox" id="tamper-toggle">
+              <span class="switch-track"></span>
+            </label>
           </div>
-          <label class="switch-label">
-            <input type="checkbox" id="tamper-toggle">
-            <span class="switch-track"></span>
-          </label>
+
+          <div class="tamper-desc" id="tamper-status-desc">
+            Forensic evaluation: Demonstrates collision resistance & avalanche effect (Slide 6).
+          </div>
+
+          <!-- Tamper Mode Buttons (A3) -->
+          <div class="tamper-modes-bar">
+            <button class="tamper-mode-btn active" data-mode="drift">+1 Unit Drift</button>
+            <button class="tamper-mode-btn" data-mode="wrong-id">Wrong User ID</button>
+            <button class="tamper-mode-btn" data-mode="corrupt-proof">Corrupt Sibling Hash</button>
+            <button class="tamper-mode-btn" data-mode="omitted-user">Omitted User</button>
+          </div>
         </div>
 
         <div class="action-grid">
@@ -212,7 +243,7 @@
         </div>
       </section>
 
-      <!-- Audit Verdict Banners -->
+      <!-- Audit Verdict Banners (R1: Explicit Path Attribution) -->
       <div class="audit-verdict-banner verified" id="result-success">
         <div class="verdict-header">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -221,11 +252,11 @@
           <span>CRYPTOGRAPHIC INCLUSION VERIFIED</span>
         </div>
         <div class="verdict-explanation">
-          Smart contract evaluated the dual-hash pre-image <code id="verified-leaf-code" style="color: #38bdf8; font-family: var(--font-mono);">keccak256(...)</code> with the 6 sibling hashes. Recomputed root exactly matches canonical on-chain commitment.
+          Leaf pre-image <code id="verified-leaf-code" style="color: #38bdf8; font-family: var(--font-mono);">keccak256(...)</code> traversed <span id="verdict-proof-len">6</span> sibling hashes and reached the exact root stored in the smart contract!
         </div>
         <div class="verdict-meta-bar">
-          <span class="verdict-pill">Evaluation: Consensual Match</span>
-          <span class="verdict-pill">Execution Cost: 0 Gas (eth_call view)</span>
+          <span class="verdict-pill" id="verdict-match-pill">Root Match: 100%</span>
+          <span class="verdict-pill onchain-call" id="verdict-path">Verified by ProofOfReserves.verify() via eth_call</span>
         </div>
       </div>
 
@@ -238,16 +269,16 @@
           </svg>
           <span>AUDIT REJECTION: ROOT MISMATCH DETECTED</span>
         </div>
-        <div class="verdict-explanation">
+        <div class="verdict-explanation" id="failure-explanation">
           <strong>Avalanche Effect Triggered:</strong> A 1-unit modification completely mutated the leaf hash. The reconstructed root diverges from the committed on-chain root. Attestation strictly aborted.
         </div>
         <div class="verdict-meta-bar">
           <span class="verdict-pill" style="color: #fca5a5;">Status: Discrepancy Flagged</span>
-          <span class="verdict-pill">Collision Resistance: Enforced</span>
+          <span class="verdict-pill" id="verdict-reject-path">Evaluated by ProofOfReserves.verify() via eth_call (Returned false)</span>
         </div>
       </div>
 
-      <!-- Balance Sheet & Solvency Section (Slide 11 Alignment) -->
+      <!-- Balance Sheet & Solvency Section (R4/R5/Slide 11 Alignment) -->
       <section class="card" id="card-solvency">
         <div class="card-header">
           <div class="card-title">
@@ -262,12 +293,12 @@
 
         <div class="balance-sheet-grid">
           <div class="balance-card" id="liabilities-card">
-            <div class="box-label">Committed Liabilities</div>
+            <div class="box-label">Declared Total Liabilities</div>
             <div class="balance-amount" id="solvency-liabilities">5,651,450</div>
-            <div style="font-size: 0.68rem; color: var(--text-tertiary); font-family: var(--font-mono);">On-Chain Merkle Tree Sum</div>
+            <div style="font-size: 0.68rem; color: var(--text-tertiary); font-family: var(--font-mono);">Declared by Owner (unconstrained)</div>
           </div>
           <div class="balance-card solvent" id="reserves-card">
-            <div class="box-label">Verified Cold Reserves</div>
+            <div class="box-label">Simulated Reserves (Mock Input)</div>
             <div class="balance-amount" id="solvency-reserves" style="color: var(--status-success);">6,200,000</div>
             <div class="status-chip pass" id="solvency-badge">
               <span id="solvency-text">SOLVENT (109.7% Ratio)</span>
@@ -278,13 +309,13 @@
         <!-- Liquidity Stress Simulator -->
         <div style="margin-top: 0.65rem;">
           <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-tertiary); margin-bottom: 0.35rem; font-family: var(--font-mono);">
-            <span>Liquidity Stress Test (FTX Reserve Outflow Model):</span>
-            <span id="reserves-slider-val" style="color: #fff;">6,200,000 USDC</span>
+            <span>Reserves Stress Slider (Simulated):</span>
+            <span id="reserves-slider-val" style="color: #fff;">6,200,000 mock USDC</span>
           </div>
           <input type="range" id="reserves-slider" min="3000000" max="8000000" step="100000" value="6200000" style="width: 100%; accent-color: var(--brand-cyan-light); cursor: pointer;">
         </div>
 
-        <!-- Scope & Limits Breakdown (Slide 11 Alignment) -->
+        <!-- Scope & Limits Breakdown (R4 & Slide 11 Alignment) -->
         <div class="scope-analysis-table">
           <div class="scope-title">Attestation Scope & Theoretical Boundaries (Slide 11)</div>
           <div class="scope-row">
@@ -292,13 +323,13 @@
               <strong>Cryptographically Proven:</strong>
               <div>• User balance inclusion in committed tree</div>
               <div>• Strict immutability post-publication</div>
-              <div>• Zero balance leakage to third parties</div>
+              <div>• Proof contains sibling hashes (not raw neighbour balances)</div>
             </div>
             <div class="scope-unproven">
               <strong>Systemic Limitations:</strong>
-              <div>• Does not prove exchange controls wallet keys</div>
+              <div>• Low-entropy unsalted balances are brute-forceable (recovered in ~1.3s if user ID is known; fixed by salting)</div>
+              <div>• Does not prove exchange controls wallet private keys</div>
               <div>• Omitted users undetected without verification</div>
-              <div>• Requires Merkle Sum Trees & ZK Proofs</div>
             </div>
           </div>
         </div>
@@ -322,7 +353,7 @@
               <span>Canonical Merkle Proof Traversal Path</span>
             </div>
             <div style="font-size: 0.72rem; color: var(--text-tertiary); font-family: var(--font-mono); margin-top: 2px;">
-              Path evaluation from User Leaf (Level 0) to Canonical State Root (Level 6)
+              Path evaluation from User Leaf (Level 0) to Canonical State Root
             </div>
           </div>
           <div class="visualizer-legend">
@@ -339,11 +370,11 @@
           </svg>
         </div>
 
-        <!-- Sibling Proof Hash Ledger -->
+        <!-- Sibling Proof Hash Ledger (R4: Dynamic Proof Length) -->
         <div class="sibling-proof-ledger">
           <div class="proof-ledger-header">
-            <span>Extracted Sibling Hashes (<span id="proof-count">6</span> levels for 50 records)</span>
-            <span>Proof Complexity: log₂(50) ≈ 6</span>
+            <span>Extracted Sibling Hashes (<span id="proof-count">6</span> hashes for current account)</span>
+            <span>Proof Complexity: log₂(50) ≈ 5 to 6</span>
           </div>
           <div class="proof-rows-scroll" id="proof-list">
             <!-- Populated dynamically via JS -->
@@ -363,13 +394,13 @@
     </div>
   </main>
 
-  <!-- Speaker Cue Sheet Modal (Section 8.4 & 9.2) -->
+  <!-- Speaker Cue Sheet Modal (R4: 6-Minute Live Demo) -->
   <div class="modal-overlay" id="speaker-modal">
     <div class="modal-dialog">
       <div class="modal-head">
         <div>
           <h2 style="font-size: 1.05rem; font-weight: 700; color: #fff;">Presentation Run Script & Bridge Cues</h2>
-          <div style="font-size: 0.72rem; color: var(--text-tertiary); font-family: var(--font-mono);">Execution Script for 5-Minute Live Demo (Master Plan Sections 8 & 9.2)</div>
+          <div style="font-size: 0.72rem; color: var(--text-tertiary); font-family: var(--font-mono);">Execution Script for 6-Minute Live Demo (Master Plan Sections 8 & 9.2)</div>
         </div>
         <button class="copy-link" id="close-modal-btn" style="font-size: 1.25rem;">&times;</button>
       </div>
@@ -385,17 +416,17 @@
 
       <div class="script-beat">
         <div class="beat-tag">Beat 2 · Step 3: Contract Commitment (1:00)</div>
-        <div class="beat-text">"Only this single 32-byte root hash is committed on-chain. One cryptographic fingerprint anchors all 50 customer accounts. The smart contract locks it with an immutable timestamp."</div>
+        <div class="beat-text">"Only this single 32-byte root hash is committed on-chain. One cryptographic fingerprint anchors all 50 customer accounts. The smart contract locks it with an immutable timestamp on the simulated EVM chain."</div>
       </div>
 
       <div class="script-beat">
         <div class="beat-tag">Beat 3 · Step 4 & 5: Proof Traversal and Verification (1:30)</div>
-        <div class="beat-text">"Now I act as Alice, customer #1042. I request my cryptographic proof comprising 6 sibling hashes. The smart contract executes verify() and evaluates to TRUE. No customer balances are disclosed."</div>
+        <div class="beat-text">"Now I act as Alice, customer #1042. I request my cryptographic proof comprising sibling hashes (5 to 6 hashes). The smart contract executes verify() and evaluates to TRUE. Neighbouring customer balances are not exposed directly in the proof."</div>
       </div>
 
       <div class="script-beat" style="border-left: 3px solid var(--status-danger);">
         <div class="beat-tag" style="color: #f87171;">Beat 4 · Step 5: Forensic Drift Injection - Avalanche Effect (1:00)</div>
-        <div class="beat-text">"A single unit discrepancy is injected into the balance, and verification fails. That is the cryptographic avalanche effect from slide 6." <em>(Allow 2 seconds for visual impact)</em></div>
+        <div class="beat-text">"A single unit discrepancy is injected into the balance, and verification fails. That is the cryptographic collision resistance and avalanche effect from slide 6." <em>(Allow 2 seconds for visual impact)</em></div>
       </div>
 
       <div class="script-beat">

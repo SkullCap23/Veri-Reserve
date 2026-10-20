@@ -1,0 +1,1219 @@
+{
+  "epoch": 2,
+  "root": "0x3f530955dc168c62ff39b174af89998cc3e62a38c5d9f4201fbf1d6ffa86f2ba",
+  "totalLiabilities": "5701450",
+  "customerCount": 50,
+  "generatedAt": "2026-10-20T15:46:34.612Z",
+  "demoUser": {
+    "userId": 1042,
+    "name": "Alice_DemoUser",
+    "balance": 300000,
+    "leaf": "0xf57a588a805c3051aa1f85059fe548f04a23c31f36e8e7bcbbe8814928348378",
+    "proof": [
+      "0xfe5859d9214afc47c103ab43a66e82e00e9f560a28c7535012a5c8697e848d89",
+      "0xf68c89ea7ff00281fda462fa967baeab3089e333e730b07e98dd547cfdf1b55c",
+      "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+      "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+      "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+    ],
+    "isDemoUser": true
+  },
+  "customers": [
+    {
+      "userId": 1001,
+      "name": "Satoshi_N",
+      "balance": 1500000,
+      "leaf": "0x9a50f41b94cb76308e650e91fd61ac8aec33fc7bbdad7bf7f1e0cc19ac672568",
+      "proof": [
+        "0x8bf728b093f2cdd70c7f2549ac9d49f2b1175c89d11219dfa622b42019921ef8",
+        "0xd5b708dd481521f711b7ee3caee70a7b00ba8f14006d5f42b6d07564d686e803",
+        "0x21e39739eeb14a38c558c0aad8ab5bc01c8586dda08e1b184f538f5657ce15bf",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1002,
+      "name": "Vitalik_B",
+      "balance": 980000,
+      "leaf": "0xb5dd118f1392688147c2388cb9a6bfedfa27be53a67c5aef9e33f972b1821827",
+      "proof": [
+        "0xb1ba12de3e128f8cc89e0196155330f8e2f09a269324177fe383517164519650",
+        "0x18903e2d4b44608ad71e69403465269178ed9ae8c6bb875ab1e43ad4279633a6",
+        "0x0f224174f1bb3169af501860f34178a4391d449bc49ad2e17b9405d27e59fc9c",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1003,
+      "name": "Hal_Finney",
+      "balance": 450000,
+      "leaf": "0x2d68cd0fe33414e38b536e4da796200bedd931abb90e69721a4d1a28a91d9ae9",
+      "proof": [
+        "0x372afb6501f1f67debb22a14e6dea67591e1c935db1e9216d8ef0350b901637f",
+        "0x2fa2513377cffd4c4b5eef0285b2ee87913b85277b55e1f24b75d9aa25b873ca",
+        "0xc79a306a881a5985aa58a7ca2f88c844cefe622bb7bbfb475b0e26af3a8acb44",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1004,
+      "name": "Nick_Szabo",
+      "balance": 320000,
+      "leaf": "0x6ecdd32e71c31e4f9cdb5496ba2ae020111e2d538114c613a4415d18557fc22d",
+      "proof": [
+        "0x6fc8092bee7a7f8fd8966ccfa388de0e0488823e00d076cf5e089080396bfb69",
+        "0x3a3642c13f42cf3f67448993aa2ab8a166900d68e30c24ac200caf06c573778b",
+        "0xa1eda3b988a9c72bacee52e0909fcbd90b3ff38fac93e8dda9d8b5f650852936",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1005,
+      "name": "Gavin_A",
+      "balance": 210000,
+      "leaf": "0x024e1b5a0ade28da967051ccea93c7a033a34bc0b25e4e339c55549b9e652868",
+      "proof": [
+        "0x0824fdc04e81a20eee36e7c92c93f3faf58792280eef10bc741ed6fc684d0500",
+        "0x042d2edf1b816b3bbbe3436c6d35c197bd68d2e22c9e9df4bcecb2049f4adcbe",
+        "0x72462cb9289b37b5fc6e0044dea3433d18bc684b18eae2c5b469f3cc2954f2d4",
+        "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1006,
+      "name": "Charlie_L",
+      "balance": 185000,
+      "leaf": "0x4e497009a12f03469dd10fd4770706b055b8a8db721b6f68029a1430c4a9d4d4",
+      "proof": [
+        "0x54438e9a4fdbec35c543ab5611fce4b22afd0d32246c1b263735480c17451e56",
+        "0xb6262c753309e47c62e77f88de480d8a5d0171d6761f47b078c5bba26ce6086e",
+        "0xfb70171d6e890047b72fe6a756e742dd90c8deba64b1c1ff335fd6a970891be1",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1007,
+      "name": "Brian_A",
+      "balance": 160000,
+      "leaf": "0xbd7d92de39a4d3d8dc0b3d84f768fbf664218adead9c8805a1be27c40ec92b36",
+      "proof": [
+        "0xbf2fe2b3380a2e272b5aadd9b4d8bdf812121e880a2aab539bc03a2160f209af",
+        "0x9ad0ee8aadc4c9f27b7bfb673c70effcd02e02ee476a852b28c9c246343c6946",
+        "0xbe2bfc71afb48caa1c973754c6439822cd7839ff574fff4494f2c400a152da1a",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1008,
+      "name": "Winklevoss_C",
+      "balance": 145000,
+      "leaf": "0xa902e6788e15433779d606e0db6c64884aeb50cc7c54615dbea99fddd5c2f106",
+      "proof": [
+        "0xa536b0331e800803843ae044cd5de7c19dfcac917f180f1bb6f151be29848e7e",
+        "0x31dbe60cb2c682781e7499b7eed4b2fbabe0fe9d48dda8719335667fe80a6910",
+        "0x0f224174f1bb3169af501860f34178a4391d449bc49ad2e17b9405d27e59fc9c",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1009,
+      "name": "Winklevoss_T",
+      "balance": 145000,
+      "leaf": "0x54438e9a4fdbec35c543ab5611fce4b22afd0d32246c1b263735480c17451e56",
+      "proof": [
+        "0x4e497009a12f03469dd10fd4770706b055b8a8db721b6f68029a1430c4a9d4d4",
+        "0xb6262c753309e47c62e77f88de480d8a5d0171d6761f47b078c5bba26ce6086e",
+        "0xfb70171d6e890047b72fe6a756e742dd90c8deba64b1c1ff335fd6a970891be1",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1010,
+      "name": "Cathie_W",
+      "balance": 120000,
+      "leaf": "0xb1ba12de3e128f8cc89e0196155330f8e2f09a269324177fe383517164519650",
+      "proof": [
+        "0xb5dd118f1392688147c2388cb9a6bfedfa27be53a67c5aef9e33f972b1821827",
+        "0x18903e2d4b44608ad71e69403465269178ed9ae8c6bb875ab1e43ad4279633a6",
+        "0x0f224174f1bb3169af501860f34178a4391d449bc49ad2e17b9405d27e59fc9c",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1011,
+      "name": "Michael_S",
+      "balance": 115000,
+      "leaf": "0x9dc0db914c8ef22fa05319e52112c66614a9c73945279f1d5e4630e558acbdc6",
+      "proof": [
+        "0xa4b65eef73437ea4ef90bf6ec291f73a5926043725d65a33eb8048bf55fe3379",
+        "0x3a95422b9a4433f09a41caec3136ce21648fb172d3f6ec0b057bd00d9d49f376",
+        "0x21e39739eeb14a38c558c0aad8ab5bc01c8586dda08e1b184f538f5657ce15bf",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1012,
+      "name": "Jack_D",
+      "balance": 95000,
+      "leaf": "0x3f00b4b87b2f44d5ec91cf320a3f80abb6405b847d76a05c1725a7948ed36f6c",
+      "proof": [
+        "0x3e608d319d9d95a3768cf4b455f686219f1526ff6e66c6a5b34e693ef47c83f3",
+        "0xce45701f02f66d607fda5c7d954664d70198bea91538c4c660fd9bd31e809e3e",
+        "0xc5b96b64d3956bdf6d431f642ee7b6476db71e1dea2cb345143c28aec49a8b83",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1013,
+      "name": "Balaji_S",
+      "balance": 88000,
+      "leaf": "0x5bce13a0d0e892c63de25f50868de42a1ca5cf4656ce48cfd2159c3492522fa5",
+      "proof": [
+        "0x58bf16028a17267a279620ab40652a0242b0e49a9a8fc3458fa5e2975b40a6de",
+        "0x371ad2d33a59ba9f7e69b4f035d2eaf69add4a465d9a8c56ac6e07dc90e6ff25",
+        "0xfb70171d6e890047b72fe6a756e742dd90c8deba64b1c1ff335fd6a970891be1",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1014,
+      "name": "Marc_A",
+      "balance": 82000,
+      "leaf": "0xbfe4e72e6184cd00809c72b7a735ac8920227ccda7e72586824cdabd259b7ec0",
+      "proof": [
+        "0xcd0b865f35970f6dcb8a84357da751781f01639a32029856c42fefd8dae17a7e",
+        "0xbbf61bcaa1d66e48ab2c3879cd38d09142565b85dbe31c775b543582127d7cd8",
+        "0xbe2bfc71afb48caa1c973754c6439822cd7839ff574fff4494f2c400a152da1a",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1015,
+      "name": "Chris_D",
+      "balance": 76000,
+      "leaf": "0xe731779fa406da5e9fde89c7253fd941251f769cb66004b1a4e80b947d1e7d00",
+      "proof": [
+        "0xeded8c0c3da9de6610e118c52f29d47e931bfacccdd96541f6b8c22300f95a23",
+        "0x4e8c6d12c79e35cb0b2a1f87158aed4319cfca96b3dd65e577d7af6fff641023",
+        "0x2a7da1138c165780a33328a15c53ddad95d2469fea8df3b620e4b91f35006ca0",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1016,
+      "name": "Fred_E",
+      "balance": 69000,
+      "leaf": "0x602b1e98196bed923609f997cfb72db773509e1de9cf51e9bcbd4cebb741eef1",
+      "proof": [
+        "0x6d59e887212585eabd87b8aa4f36f1519c8fc42004f51b0241520a2b2f0dc8dc",
+        "0x3be17dbcbbfda4abc576e7dda5caf9fbefb1fbbf42036922eda5eac6833065e6",
+        "0xa1eda3b988a9c72bacee52e0909fcbd90b3ff38fac93e8dda9d8b5f650852936",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1017,
+      "name": "Naval_R",
+      "balance": 64000,
+      "leaf": "0xe251d4cd4ae50970831359749141b796dda939057cc2a3fb18975896677ddc27",
+      "proof": [
+        "0xe04b8bc2b69004e7f83ac3c3b5a422b0512dd07d9652ca013a5444bb0e0e852f",
+        "0xf0b08211f431d75c5d6ac4185f8be5c3b028f5ed255b31725588de956bb13b9c",
+        "0x61c7c9b5935662147910ef66e4840039140b201e69d87d1b52a41bafa6e2127d",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1018,
+      "name": "Jesse_P",
+      "balance": 58000,
+      "leaf": "0xd65dc314e85b657583d3efe80f28dca442ecbc14f72072a66f6b278519ac4c9a",
+      "proof": [
+        "0xd1e813f3fc15d8ff3d9b83d20e632c44725cdcbfa54b0b9158081a56e4577899",
+        "0x9af7c24aa6ef85ad4d8c28aec56944a27f9965ece8a33b2bf561fd8ee1660f2f",
+        "0x61c7c9b5935662147910ef66e4840039140b201e69d87d1b52a41bafa6e2127d",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1019,
+      "name": "Barry_S",
+      "balance": 54000,
+      "leaf": "0x2819829e935a78b83a1967434c4a6b295b54203c3747b55dbd5100edfd3513bc",
+      "proof": [
+        "0x27e9c2614f85ea84fe42db40889ea9692d547224f03081ed2b15cc61ccf40b9c",
+        "0x600c48014114bbcdb080967912c1b5d64bfbf237e968343a3bcf39fcdd2c95f1",
+        "0xc79a306a881a5985aa58a7ca2f88c844cefe622bb7bbfb475b0e26af3a8acb44",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1020,
+      "name": "Arthur_H",
+      "balance": 51000,
+      "leaf": "0x6fc8092bee7a7f8fd8966ccfa388de0e0488823e00d076cf5e089080396bfb69",
+      "proof": [
+        "0x6ecdd32e71c31e4f9cdb5496ba2ae020111e2d538114c613a4415d18557fc22d",
+        "0x3a3642c13f42cf3f67448993aa2ab8a166900d68e30c24ac200caf06c573778b",
+        "0xa1eda3b988a9c72bacee52e0909fcbd90b3ff38fac93e8dda9d8b5f650852936",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1021,
+      "name": "Hayden_A",
+      "balance": 47000,
+      "leaf": "0x1d29c23f4c439eee5d5a6f2e15e8ec5e9d76168b1caf46c2339851538de05802",
+      "proof": [
+        "0x1f356573fdaa1a1e1b651729cef5a93d3d21baa861a8d6ccc6b052b1200043f7",
+        "0xe341a8a9d8019ace37ead4ec11e2a5d98feb089f6a699df8a390715ee55e5209",
+        "0x5e7cfe1169fb3a633c86d625a3018596b3e78af9b4836a84046d0302169af270",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1022,
+      "name": "Stani_K",
+      "balance": 43000,
+      "leaf": "0xa4b65eef73437ea4ef90bf6ec291f73a5926043725d65a33eb8048bf55fe3379",
+      "proof": [
+        "0x9dc0db914c8ef22fa05319e52112c66614a9c73945279f1d5e4630e558acbdc6",
+        "0x3a95422b9a4433f09a41caec3136ce21648fb172d3f6ec0b057bd00d9d49f376",
+        "0x21e39739eeb14a38c558c0aad8ab5bc01c8586dda08e1b184f538f5657ce15bf",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1023,
+      "name": "Robert_L",
+      "balance": 39000,
+      "leaf": "0xeded8c0c3da9de6610e118c52f29d47e931bfacccdd96541f6b8c22300f95a23",
+      "proof": [
+        "0xe731779fa406da5e9fde89c7253fd941251f769cb66004b1a4e80b947d1e7d00",
+        "0x4e8c6d12c79e35cb0b2a1f87158aed4319cfca96b3dd65e577d7af6fff641023",
+        "0x2a7da1138c165780a33328a15c53ddad95d2469fea8df3b620e4b91f35006ca0",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1024,
+      "name": "Kain_W",
+      "balance": 36000,
+      "leaf": "0x58bf16028a17267a279620ab40652a0242b0e49a9a8fc3458fa5e2975b40a6de",
+      "proof": [
+        "0x5bce13a0d0e892c63de25f50868de42a1ca5cf4656ce48cfd2159c3492522fa5",
+        "0x371ad2d33a59ba9f7e69b4f035d2eaf69add4a465d9a8c56ac6e07dc90e6ff25",
+        "0xfb70171d6e890047b72fe6a756e742dd90c8deba64b1c1ff335fd6a970891be1",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1025,
+      "name": "Andre_C",
+      "balance": 32000,
+      "leaf": "0x1f356573fdaa1a1e1b651729cef5a93d3d21baa861a8d6ccc6b052b1200043f7",
+      "proof": [
+        "0x1d29c23f4c439eee5d5a6f2e15e8ec5e9d76168b1caf46c2339851538de05802",
+        "0xe341a8a9d8019ace37ead4ec11e2a5d98feb089f6a699df8a390715ee55e5209",
+        "0x5e7cfe1169fb3a633c86d625a3018596b3e78af9b4836a84046d0302169af270",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1026,
+      "name": "Daniele_S",
+      "balance": 28000,
+      "leaf": "0x18408e64490fdcc67c6b7f49875f1d907eb31caa6f08a79b0fd0a80b7094d340",
+      "proof": [
+        "0x18e623d13337e543a432ac089677d581195b22588ee594db2c1962514690edef",
+        "0x2d12a6e0e45d1ace67bd1b80f1ea139446c0f4093cefddf7833bb45cf69fa629",
+        "0x5e7cfe1169fb3a633c86d625a3018596b3e78af9b4836a84046d0302169af270",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1027,
+      "name": "Do_Kwon_Frozen",
+      "balance": 25000,
+      "leaf": "0x8bf728b093f2cdd70c7f2549ac9d49f2b1175c89d11219dfa622b42019921ef8",
+      "proof": [
+        "0x9a50f41b94cb76308e650e91fd61ac8aec33fc7bbdad7bf7f1e0cc19ac672568",
+        "0xd5b708dd481521f711b7ee3caee70a7b00ba8f14006d5f42b6d07564d686e803",
+        "0x21e39739eeb14a38c558c0aad8ab5bc01c8586dda08e1b184f538f5657ce15bf",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1028,
+      "name": "Sam_TR_Seized",
+      "balance": 22000,
+      "leaf": "0x0fc866ed2375a5865d1b5d13266678d2395abb0ecae906859d067f2b2c4e7cff",
+      "proof": [
+        "0x1781dec203ac95fc6754d68447afc5980d92fe25ed4d361fda1456299eebc811",
+        "0xee1a86f0d02918a87499dd0390ffe8e75c949e8ade0956a0d321ff29882615ac",
+        "0x72462cb9289b37b5fc6e0044dea3433d18bc684b18eae2c5b469f3cc2954f2d4",
+        "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1029,
+      "name": "Emin_GS",
+      "balance": 20000,
+      "leaf": "0x7ee620a979913ebf1d5bb0116d02ec121cece83fbaa3be80edf183291822bd42",
+      "proof": [
+        "0x84d0b6fbd327fb884fc7be667a3fc78cf3979684f47228a126ae675174736298",
+        "0x2830cf3e26856e80bc02e724974e127394de7fd89457835749c5af2290789430",
+        "0xac911242b0674047eaeb20adf0895274df66148ba12c44745c2de8572d80e3ca",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1030,
+      "name": "Silvio_M",
+      "balance": 18500,
+      "leaf": "0x47362b83e99a3b33fd3f900360bb14cfb93a4720c41aa1384c2f62e7b47660bd",
+      "proof": [
+        "0x45cfb1c222fcb658c09b0fa53406c1bebf6b8168de72a6b5d0cd38cde84613ba",
+        "0x9dfa14144cf59a30f07c73a380c01e66d4568a0e16053590a2eab70f0b9f40bd",
+        "0xc5b96b64d3956bdf6d431f642ee7b6476db71e1dea2cb345143c28aec49a8b83",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1031,
+      "name": "Dan_L",
+      "balance": 16000,
+      "leaf": "0xf3a5772a2def38fd22ea67d8d68ae6ee6b450625cbc73c54c88578faca7e8893",
+      "proof": [
+        "0xf249afa1c1c32fb2da2092aed8bf0c6f064858a2c5fe2e414ecb0fa0308641ef",
+        "0x1fb0ec0036b8fda1d7cbfb306644bf6921c64a59bfc2322510d7dde43881738c",
+        "0x2a7da1138c165780a33328a15c53ddad95d2469fea8df3b620e4b91f35006ca0",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1032,
+      "name": "Sergey_N",
+      "balance": 14500,
+      "leaf": "0x372afb6501f1f67debb22a14e6dea67591e1c935db1e9216d8ef0350b901637f",
+      "proof": [
+        "0x2d68cd0fe33414e38b536e4da796200bedd931abb90e69721a4d1a28a91d9ae9",
+        "0x2fa2513377cffd4c4b5eef0285b2ee87913b85277b55e1f24b75d9aa25b873ca",
+        "0xc79a306a881a5985aa58a7ca2f88c844cefe622bb7bbfb475b0e26af3a8acb44",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1033,
+      "name": "Charles_H",
+      "balance": 13200,
+      "leaf": "0x72ffd6189ce02bfab19641a5c22bd63d2b25c81ae4c2b8d18eff1b851fc167f3",
+      "proof": [
+        "0x70e5b28184dfbd66e00beec6c0fef0d7088ffeceec5f6c07891f6cd20c167beb",
+        "0xba4626f673aa6382f3d553e6950fc41ad894aede00093989bec7a666276fb620",
+        "0xac911242b0674047eaeb20adf0895274df66148ba12c44745c2de8572d80e3ca",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1034,
+      "name": "Gavin_W",
+      "balance": 12100,
+      "leaf": "0x84d0b6fbd327fb884fc7be667a3fc78cf3979684f47228a126ae675174736298",
+      "proof": [
+        "0x7ee620a979913ebf1d5bb0116d02ec121cece83fbaa3be80edf183291822bd42",
+        "0x2830cf3e26856e80bc02e724974e127394de7fd89457835749c5af2290789430",
+        "0xac911242b0674047eaeb20adf0895274df66148ba12c44745c2de8572d80e3ca",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1035,
+      "name": "Justin_S",
+      "balance": 11000,
+      "leaf": "0xa536b0331e800803843ae044cd5de7c19dfcac917f180f1bb6f151be29848e7e",
+      "proof": [
+        "0xa902e6788e15433779d606e0db6c64884aeb50cc7c54615dbea99fddd5c2f106",
+        "0x31dbe60cb2c682781e7499b7eed4b2fbabe0fe9d48dda8719335667fe80a6910",
+        "0x0f224174f1bb3169af501860f34178a4391d449bc49ad2e17b9405d27e59fc9c",
+        "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1036,
+      "name": "Brad_G",
+      "balance": 9800,
+      "leaf": "0x6d59e887212585eabd87b8aa4f36f1519c8fc42004f51b0241520a2b2f0dc8dc",
+      "proof": [
+        "0x602b1e98196bed923609f997cfb72db773509e1de9cf51e9bcbd4cebb741eef1",
+        "0x3be17dbcbbfda4abc576e7dda5caf9fbefb1fbbf42036922eda5eac6833065e6",
+        "0xa1eda3b988a9c72bacee52e0909fcbd90b3ff38fac93e8dda9d8b5f650852936",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1037,
+      "name": "Jed_M",
+      "balance": 8700,
+      "leaf": "0x0824fdc04e81a20eee36e7c92c93f3faf58792280eef10bc741ed6fc684d0500",
+      "proof": [
+        "0x024e1b5a0ade28da967051ccea93c7a033a34bc0b25e4e339c55549b9e652868",
+        "0x042d2edf1b816b3bbbe3436c6d35c197bd68d2e22c9e9df4bcecb2049f4adcbe",
+        "0x72462cb9289b37b5fc6e0044dea3433d18bc684b18eae2c5b469f3cc2954f2d4",
+        "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1038,
+      "name": "Paolo_A",
+      "balance": 7600,
+      "leaf": "0xbf2fe2b3380a2e272b5aadd9b4d8bdf812121e880a2aab539bc03a2160f209af",
+      "proof": [
+        "0xbd7d92de39a4d3d8dc0b3d84f768fbf664218adead9c8805a1be27c40ec92b36",
+        "0x9ad0ee8aadc4c9f27b7bfb673c70effcd02e02ee476a852b28c9c246343c6946",
+        "0xbe2bfc71afb48caa1c973754c6439822cd7839ff574fff4494f2c400a152da1a",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1039,
+      "name": "CZ_Binance",
+      "balance": 6500,
+      "leaf": "0xf249afa1c1c32fb2da2092aed8bf0c6f064858a2c5fe2e414ecb0fa0308641ef",
+      "proof": [
+        "0xf3a5772a2def38fd22ea67d8d68ae6ee6b450625cbc73c54c88578faca7e8893",
+        "0x1fb0ec0036b8fda1d7cbfb306644bf6921c64a59bfc2322510d7dde43881738c",
+        "0x2a7da1138c165780a33328a15c53ddad95d2469fea8df3b620e4b91f35006ca0",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1040,
+      "name": "Erik_V",
+      "balance": 5400,
+      "leaf": "0x70e5b28184dfbd66e00beec6c0fef0d7088ffeceec5f6c07891f6cd20c167beb",
+      "proof": [
+        "0x72ffd6189ce02bfab19641a5c22bd63d2b25c81ae4c2b8d18eff1b851fc167f3",
+        "0xba4626f673aa6382f3d553e6950fc41ad894aede00093989bec7a666276fb620",
+        "0xac911242b0674047eaeb20adf0895274df66148ba12c44745c2de8572d80e3ca",
+        "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+        "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1041,
+      "name": "Bob_Builder",
+      "balance": 4200,
+      "leaf": "0xd1e813f3fc15d8ff3d9b83d20e632c44725cdcbfa54b0b9158081a56e4577899",
+      "proof": [
+        "0xd65dc314e85b657583d3efe80f28dca442ecbc14f72072a66f6b278519ac4c9a",
+        "0x9af7c24aa6ef85ad4d8c28aec56944a27f9965ece8a33b2bf561fd8ee1660f2f",
+        "0x61c7c9b5935662147910ef66e4840039140b201e69d87d1b52a41bafa6e2127d",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1042,
+      "name": "Alice_DemoUser",
+      "balance": 300000,
+      "leaf": "0xf57a588a805c3051aa1f85059fe548f04a23c31f36e8e7bcbbe8814928348378",
+      "proof": [
+        "0xfe5859d9214afc47c103ab43a66e82e00e9f560a28c7535012a5c8697e848d89",
+        "0xf68c89ea7ff00281fda462fa967baeab3089e333e730b07e98dd547cfdf1b55c",
+        "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": true
+    },
+    {
+      "userId": 1043,
+      "name": "Carol_Trader",
+      "balance": 3800,
+      "leaf": "0x45cfb1c222fcb658c09b0fa53406c1bebf6b8168de72a6b5d0cd38cde84613ba",
+      "proof": [
+        "0x47362b83e99a3b33fd3f900360bb14cfb93a4720c41aa1384c2f62e7b47660bd",
+        "0x9dfa14144cf59a30f07c73a380c01e66d4568a0e16053590a2eab70f0b9f40bd",
+        "0xc5b96b64d3956bdf6d431f642ee7b6476db71e1dea2cb345143c28aec49a8b83",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1044,
+      "name": "Dave_Hodler",
+      "balance": 2900,
+      "leaf": "0x3e608d319d9d95a3768cf4b455f686219f1526ff6e66c6a5b34e693ef47c83f3",
+      "proof": [
+        "0x3f00b4b87b2f44d5ec91cf320a3f80abb6405b847d76a05c1725a7948ed36f6c",
+        "0xce45701f02f66d607fda5c7d954664d70198bea91538c4c660fd9bd31e809e3e",
+        "0xc5b96b64d3956bdf6d431f642ee7b6476db71e1dea2cb345143c28aec49a8b83",
+        "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1045,
+      "name": "Eve_Validator",
+      "balance": 2400,
+      "leaf": "0xfe5859d9214afc47c103ab43a66e82e00e9f560a28c7535012a5c8697e848d89",
+      "proof": [
+        "0xf57a588a805c3051aa1f85059fe548f04a23c31f36e8e7bcbbe8814928348378",
+        "0xf68c89ea7ff00281fda462fa967baeab3089e333e730b07e98dd547cfdf1b55c",
+        "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1046,
+      "name": "Frank_Miner",
+      "balance": 1900,
+      "leaf": "0xcd0b865f35970f6dcb8a84357da751781f01639a32029856c42fefd8dae17a7e",
+      "proof": [
+        "0xbfe4e72e6184cd00809c72b7a735ac8920227ccda7e72586824cdabd259b7ec0",
+        "0xbbf61bcaa1d66e48ab2c3879cd38d09142565b85dbe31c775b543582127d7cd8",
+        "0xbe2bfc71afb48caa1c973754c6439822cd7839ff574fff4494f2c400a152da1a",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1047,
+      "name": "Grace_Staker",
+      "balance": 1500,
+      "leaf": "0x1781dec203ac95fc6754d68447afc5980d92fe25ed4d361fda1456299eebc811",
+      "proof": [
+        "0x0fc866ed2375a5865d1b5d13266678d2395abb0ecae906859d067f2b2c4e7cff",
+        "0xee1a86f0d02918a87499dd0390ffe8e75c949e8ade0956a0d321ff29882615ac",
+        "0x72462cb9289b37b5fc6e0044dea3433d18bc684b18eae2c5b469f3cc2954f2d4",
+        "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+        "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1048,
+      "name": "Heidi_Dev",
+      "balance": 1100,
+      "leaf": "0xe04b8bc2b69004e7f83ac3c3b5a422b0512dd07d9652ca013a5444bb0e0e852f",
+      "proof": [
+        "0xe251d4cd4ae50970831359749141b796dda939057cc2a3fb18975896677ddc27",
+        "0xf0b08211f431d75c5d6ac4185f8be5c3b028f5ed255b31725588de956bb13b9c",
+        "0x61c7c9b5935662147910ef66e4840039140b201e69d87d1b52a41bafa6e2127d",
+        "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+        "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1049,
+      "name": "Ivan_Node",
+      "balance": 850,
+      "leaf": "0x18e623d13337e543a432ac089677d581195b22588ee594db2c1962514690edef",
+      "proof": [
+        "0x18408e64490fdcc67c6b7f49875f1d907eb31caa6f08a79b0fd0a80b7094d340",
+        "0x2d12a6e0e45d1ace67bd1b80f1ea139446c0f4093cefddf7833bb45cf69fa629",
+        "0x5e7cfe1169fb3a633c86d625a3018596b3e78af9b4836a84046d0302169af270",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    },
+    {
+      "userId": 1050,
+      "name": "Judy_Auditor",
+      "balance": 500,
+      "leaf": "0x27e9c2614f85ea84fe42db40889ea9692d547224f03081ed2b15cc61ccf40b9c",
+      "proof": [
+        "0x2819829e935a78b83a1967434c4a6b295b54203c3747b55dbd5100edfd3513bc",
+        "0x600c48014114bbcdb080967912c1b5d64bfbf237e968343a3bcf39fcdd2c95f1",
+        "0xc79a306a881a5985aa58a7ca2f88c844cefe622bb7bbfb475b0e26af3a8acb44",
+        "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+        "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+        "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa"
+      ],
+      "isDemoUser": false
+    }
+  ],
+  "treeDump": {
+    "format": "standard-v1",
+    "leafEncoding": [
+      "uint256",
+      "uint256"
+    ],
+    "tree": [
+      "0x3f530955dc168c62ff39b174af89998cc3e62a38c5d9f4201fbf1d6ffa86f2ba",
+      "0x4d21c6733378c5623e67690c974510ef06208238ebbfa629054a502e3c6f07a5",
+      "0x24a0ecfdb6ee840df05516e37a94c8a1c5f017253c213548556ef10c93f7b7aa",
+      "0x1d2fed211045ab6f4b40160a5e01c68e19986f7f0339cc52edc6bf3c70d29fbd",
+      "0xc36158fb6e4c82883cac793549b38d452f9ea3cb372b59ee196e17404aa1dc4d",
+      "0x7e740352bdaa786b6297b700ef2861c64fa509b424e33746f3d09fe5a5eb5f38",
+      "0x6da7aba6a0b02d3c7215d195d84db0d954f7b1691ac54909ccf190439eec51ad",
+      "0xa303cccf2faa5fe8668e2eb90134a62c4e1603fb564f7d9172a0fb13c1fd861e",
+      "0x800d03703b3748cf396c99672e49d6d481ee4ba71d92bb626f9c4a9b667bdebd",
+      "0x1ac01fd58acbaf6e47b8171c5c9b8613ae7a093e6bdf3affeed2979accca04a0",
+      "0x3e749cdc4609eb98b2d8b0b778dcbfa36dc94d346b3581d7d347f810b85abf7a",
+      "0x2a7da1138c165780a33328a15c53ddad95d2469fea8df3b620e4b91f35006ca0",
+      "0xeaa65f05fe9540836273b7e7524c4afd57ec65de5d3b59945d2932eb422d7fbc",
+      "0xbe2bfc71afb48caa1c973754c6439822cd7839ff574fff4494f2c400a152da1a",
+      "0x61c7c9b5935662147910ef66e4840039140b201e69d87d1b52a41bafa6e2127d",
+      "0x21e39739eeb14a38c558c0aad8ab5bc01c8586dda08e1b184f538f5657ce15bf",
+      "0x0f224174f1bb3169af501860f34178a4391d449bc49ad2e17b9405d27e59fc9c",
+      "0xa1eda3b988a9c72bacee52e0909fcbd90b3ff38fac93e8dda9d8b5f650852936",
+      "0xac911242b0674047eaeb20adf0895274df66148ba12c44745c2de8572d80e3ca",
+      "0xc5b96b64d3956bdf6d431f642ee7b6476db71e1dea2cb345143c28aec49a8b83",
+      "0xfb70171d6e890047b72fe6a756e742dd90c8deba64b1c1ff335fd6a970891be1",
+      "0x5e7cfe1169fb3a633c86d625a3018596b3e78af9b4836a84046d0302169af270",
+      "0xc79a306a881a5985aa58a7ca2f88c844cefe622bb7bbfb475b0e26af3a8acb44",
+      "0xf68c89ea7ff00281fda462fa967baeab3089e333e730b07e98dd547cfdf1b55c",
+      "0x72462cb9289b37b5fc6e0044dea3433d18bc684b18eae2c5b469f3cc2954f2d4",
+      "0x4e8c6d12c79e35cb0b2a1f87158aed4319cfca96b3dd65e577d7af6fff641023",
+      "0x1fb0ec0036b8fda1d7cbfb306644bf6921c64a59bfc2322510d7dde43881738c",
+      "0x9af7c24aa6ef85ad4d8c28aec56944a27f9965ece8a33b2bf561fd8ee1660f2f",
+      "0xf0b08211f431d75c5d6ac4185f8be5c3b028f5ed255b31725588de956bb13b9c",
+      "0x9ad0ee8aadc4c9f27b7bfb673c70effcd02e02ee476a852b28c9c246343c6946",
+      "0xbbf61bcaa1d66e48ab2c3879cd38d09142565b85dbe31c775b543582127d7cd8",
+      "0x31dbe60cb2c682781e7499b7eed4b2fbabe0fe9d48dda8719335667fe80a6910",
+      "0x18903e2d4b44608ad71e69403465269178ed9ae8c6bb875ab1e43ad4279633a6",
+      "0xd5b708dd481521f711b7ee3caee70a7b00ba8f14006d5f42b6d07564d686e803",
+      "0x3a95422b9a4433f09a41caec3136ce21648fb172d3f6ec0b057bd00d9d49f376",
+      "0xba4626f673aa6382f3d553e6950fc41ad894aede00093989bec7a666276fb620",
+      "0x2830cf3e26856e80bc02e724974e127394de7fd89457835749c5af2290789430",
+      "0x3be17dbcbbfda4abc576e7dda5caf9fbefb1fbbf42036922eda5eac6833065e6",
+      "0x3a3642c13f42cf3f67448993aa2ab8a166900d68e30c24ac200caf06c573778b",
+      "0xb6262c753309e47c62e77f88de480d8a5d0171d6761f47b078c5bba26ce6086e",
+      "0x371ad2d33a59ba9f7e69b4f035d2eaf69add4a465d9a8c56ac6e07dc90e6ff25",
+      "0xce45701f02f66d607fda5c7d954664d70198bea91538c4c660fd9bd31e809e3e",
+      "0x9dfa14144cf59a30f07c73a380c01e66d4568a0e16053590a2eab70f0b9f40bd",
+      "0x600c48014114bbcdb080967912c1b5d64bfbf237e968343a3bcf39fcdd2c95f1",
+      "0x2fa2513377cffd4c4b5eef0285b2ee87913b85277b55e1f24b75d9aa25b873ca",
+      "0x2d12a6e0e45d1ace67bd1b80f1ea139446c0f4093cefddf7833bb45cf69fa629",
+      "0xe341a8a9d8019ace37ead4ec11e2a5d98feb089f6a699df8a390715ee55e5209",
+      "0x042d2edf1b816b3bbbe3436c6d35c197bd68d2e22c9e9df4bcecb2049f4adcbe",
+      "0xee1a86f0d02918a87499dd0390ffe8e75c949e8ade0956a0d321ff29882615ac",
+      "0xfe5859d9214afc47c103ab43a66e82e00e9f560a28c7535012a5c8697e848d89",
+      "0xf57a588a805c3051aa1f85059fe548f04a23c31f36e8e7bcbbe8814928348378",
+      "0xf3a5772a2def38fd22ea67d8d68ae6ee6b450625cbc73c54c88578faca7e8893",
+      "0xf249afa1c1c32fb2da2092aed8bf0c6f064858a2c5fe2e414ecb0fa0308641ef",
+      "0xeded8c0c3da9de6610e118c52f29d47e931bfacccdd96541f6b8c22300f95a23",
+      "0xe731779fa406da5e9fde89c7253fd941251f769cb66004b1a4e80b947d1e7d00",
+      "0xe251d4cd4ae50970831359749141b796dda939057cc2a3fb18975896677ddc27",
+      "0xe04b8bc2b69004e7f83ac3c3b5a422b0512dd07d9652ca013a5444bb0e0e852f",
+      "0xd65dc314e85b657583d3efe80f28dca442ecbc14f72072a66f6b278519ac4c9a",
+      "0xd1e813f3fc15d8ff3d9b83d20e632c44725cdcbfa54b0b9158081a56e4577899",
+      "0xcd0b865f35970f6dcb8a84357da751781f01639a32029856c42fefd8dae17a7e",
+      "0xbfe4e72e6184cd00809c72b7a735ac8920227ccda7e72586824cdabd259b7ec0",
+      "0xbf2fe2b3380a2e272b5aadd9b4d8bdf812121e880a2aab539bc03a2160f209af",
+      "0xbd7d92de39a4d3d8dc0b3d84f768fbf664218adead9c8805a1be27c40ec92b36",
+      "0xb5dd118f1392688147c2388cb9a6bfedfa27be53a67c5aef9e33f972b1821827",
+      "0xb1ba12de3e128f8cc89e0196155330f8e2f09a269324177fe383517164519650",
+      "0xa902e6788e15433779d606e0db6c64884aeb50cc7c54615dbea99fddd5c2f106",
+      "0xa536b0331e800803843ae044cd5de7c19dfcac917f180f1bb6f151be29848e7e",
+      "0xa4b65eef73437ea4ef90bf6ec291f73a5926043725d65a33eb8048bf55fe3379",
+      "0x9dc0db914c8ef22fa05319e52112c66614a9c73945279f1d5e4630e558acbdc6",
+      "0x9a50f41b94cb76308e650e91fd61ac8aec33fc7bbdad7bf7f1e0cc19ac672568",
+      "0x8bf728b093f2cdd70c7f2549ac9d49f2b1175c89d11219dfa622b42019921ef8",
+      "0x84d0b6fbd327fb884fc7be667a3fc78cf3979684f47228a126ae675174736298",
+      "0x7ee620a979913ebf1d5bb0116d02ec121cece83fbaa3be80edf183291822bd42",
+      "0x72ffd6189ce02bfab19641a5c22bd63d2b25c81ae4c2b8d18eff1b851fc167f3",
+      "0x70e5b28184dfbd66e00beec6c0fef0d7088ffeceec5f6c07891f6cd20c167beb",
+      "0x6fc8092bee7a7f8fd8966ccfa388de0e0488823e00d076cf5e089080396bfb69",
+      "0x6ecdd32e71c31e4f9cdb5496ba2ae020111e2d538114c613a4415d18557fc22d",
+      "0x6d59e887212585eabd87b8aa4f36f1519c8fc42004f51b0241520a2b2f0dc8dc",
+      "0x602b1e98196bed923609f997cfb72db773509e1de9cf51e9bcbd4cebb741eef1",
+      "0x5bce13a0d0e892c63de25f50868de42a1ca5cf4656ce48cfd2159c3492522fa5",
+      "0x58bf16028a17267a279620ab40652a0242b0e49a9a8fc3458fa5e2975b40a6de",
+      "0x54438e9a4fdbec35c543ab5611fce4b22afd0d32246c1b263735480c17451e56",
+      "0x4e497009a12f03469dd10fd4770706b055b8a8db721b6f68029a1430c4a9d4d4",
+      "0x47362b83e99a3b33fd3f900360bb14cfb93a4720c41aa1384c2f62e7b47660bd",
+      "0x45cfb1c222fcb658c09b0fa53406c1bebf6b8168de72a6b5d0cd38cde84613ba",
+      "0x3f00b4b87b2f44d5ec91cf320a3f80abb6405b847d76a05c1725a7948ed36f6c",
+      "0x3e608d319d9d95a3768cf4b455f686219f1526ff6e66c6a5b34e693ef47c83f3",
+      "0x372afb6501f1f67debb22a14e6dea67591e1c935db1e9216d8ef0350b901637f",
+      "0x2d68cd0fe33414e38b536e4da796200bedd931abb90e69721a4d1a28a91d9ae9",
+      "0x2819829e935a78b83a1967434c4a6b295b54203c3747b55dbd5100edfd3513bc",
+      "0x27e9c2614f85ea84fe42db40889ea9692d547224f03081ed2b15cc61ccf40b9c",
+      "0x1f356573fdaa1a1e1b651729cef5a93d3d21baa861a8d6ccc6b052b1200043f7",
+      "0x1d29c23f4c439eee5d5a6f2e15e8ec5e9d76168b1caf46c2339851538de05802",
+      "0x18e623d13337e543a432ac089677d581195b22588ee594db2c1962514690edef",
+      "0x18408e64490fdcc67c6b7f49875f1d907eb31caa6f08a79b0fd0a80b7094d340",
+      "0x1781dec203ac95fc6754d68447afc5980d92fe25ed4d361fda1456299eebc811",
+      "0x0fc866ed2375a5865d1b5d13266678d2395abb0ecae906859d067f2b2c4e7cff",
+      "0x0824fdc04e81a20eee36e7c92c93f3faf58792280eef10bc741ed6fc684d0500",
+      "0x024e1b5a0ade28da967051ccea93c7a033a34bc0b25e4e339c55549b9e652868"
+    ],
+    "values": [
+      {
+        "value": [
+          "1001",
+          "1500000"
+        ],
+        "treeIndex": 69
+      },
+      {
+        "value": [
+          "1002",
+          "980000"
+        ],
+        "treeIndex": 63
+      },
+      {
+        "value": [
+          "1003",
+          "450000"
+        ],
+        "treeIndex": 88
+      },
+      {
+        "value": [
+          "1004",
+          "320000"
+        ],
+        "treeIndex": 76
+      },
+      {
+        "value": [
+          "1005",
+          "210000"
+        ],
+        "treeIndex": 98
+      },
+      {
+        "value": [
+          "1006",
+          "185000"
+        ],
+        "treeIndex": 82
+      },
+      {
+        "value": [
+          "1007",
+          "160000"
+        ],
+        "treeIndex": 62
+      },
+      {
+        "value": [
+          "1008",
+          "145000"
+        ],
+        "treeIndex": 65
+      },
+      {
+        "value": [
+          "1009",
+          "145000"
+        ],
+        "treeIndex": 81
+      },
+      {
+        "value": [
+          "1010",
+          "120000"
+        ],
+        "treeIndex": 64
+      },
+      {
+        "value": [
+          "1011",
+          "115000"
+        ],
+        "treeIndex": 68
+      },
+      {
+        "value": [
+          "1012",
+          "95000"
+        ],
+        "treeIndex": 85
+      },
+      {
+        "value": [
+          "1013",
+          "88000"
+        ],
+        "treeIndex": 79
+      },
+      {
+        "value": [
+          "1014",
+          "82000"
+        ],
+        "treeIndex": 60
+      },
+      {
+        "value": [
+          "1015",
+          "76000"
+        ],
+        "treeIndex": 54
+      },
+      {
+        "value": [
+          "1016",
+          "69000"
+        ],
+        "treeIndex": 78
+      },
+      {
+        "value": [
+          "1017",
+          "64000"
+        ],
+        "treeIndex": 55
+      },
+      {
+        "value": [
+          "1018",
+          "58000"
+        ],
+        "treeIndex": 57
+      },
+      {
+        "value": [
+          "1019",
+          "54000"
+        ],
+        "treeIndex": 89
+      },
+      {
+        "value": [
+          "1020",
+          "51000"
+        ],
+        "treeIndex": 75
+      },
+      {
+        "value": [
+          "1021",
+          "47000"
+        ],
+        "treeIndex": 92
+      },
+      {
+        "value": [
+          "1022",
+          "43000"
+        ],
+        "treeIndex": 67
+      },
+      {
+        "value": [
+          "1023",
+          "39000"
+        ],
+        "treeIndex": 53
+      },
+      {
+        "value": [
+          "1024",
+          "36000"
+        ],
+        "treeIndex": 80
+      },
+      {
+        "value": [
+          "1025",
+          "32000"
+        ],
+        "treeIndex": 91
+      },
+      {
+        "value": [
+          "1026",
+          "28000"
+        ],
+        "treeIndex": 94
+      },
+      {
+        "value": [
+          "1027",
+          "25000"
+        ],
+        "treeIndex": 70
+      },
+      {
+        "value": [
+          "1028",
+          "22000"
+        ],
+        "treeIndex": 96
+      },
+      {
+        "value": [
+          "1029",
+          "20000"
+        ],
+        "treeIndex": 72
+      },
+      {
+        "value": [
+          "1030",
+          "18500"
+        ],
+        "treeIndex": 83
+      },
+      {
+        "value": [
+          "1031",
+          "16000"
+        ],
+        "treeIndex": 51
+      },
+      {
+        "value": [
+          "1032",
+          "14500"
+        ],
+        "treeIndex": 87
+      },
+      {
+        "value": [
+          "1033",
+          "13200"
+        ],
+        "treeIndex": 73
+      },
+      {
+        "value": [
+          "1034",
+          "12100"
+        ],
+        "treeIndex": 71
+      },
+      {
+        "value": [
+          "1035",
+          "11000"
+        ],
+        "treeIndex": 66
+      },
+      {
+        "value": [
+          "1036",
+          "9800"
+        ],
+        "treeIndex": 77
+      },
+      {
+        "value": [
+          "1037",
+          "8700"
+        ],
+        "treeIndex": 97
+      },
+      {
+        "value": [
+          "1038",
+          "7600"
+        ],
+        "treeIndex": 61
+      },
+      {
+        "value": [
+          "1039",
+          "6500"
+        ],
+        "treeIndex": 52
+      },
+      {
+        "value": [
+          "1040",
+          "5400"
+        ],
+        "treeIndex": 74
+      },
+      {
+        "value": [
+          "1041",
+          "4200"
+        ],
+        "treeIndex": 58
+      },
+      {
+        "value": [
+          "1042",
+          "300000"
+        ],
+        "treeIndex": 50
+      },
+      {
+        "value": [
+          "1043",
+          "3800"
+        ],
+        "treeIndex": 84
+      },
+      {
+        "value": [
+          "1044",
+          "2900"
+        ],
+        "treeIndex": 86
+      },
+      {
+        "value": [
+          "1045",
+          "2400"
+        ],
+        "treeIndex": 49
+      },
+      {
+        "value": [
+          "1046",
+          "1900"
+        ],
+        "treeIndex": 59
+      },
+      {
+        "value": [
+          "1047",
+          "1500"
+        ],
+        "treeIndex": 95
+      },
+      {
+        "value": [
+          "1048",
+          "1100"
+        ],
+        "treeIndex": 56
+      },
+      {
+        "value": [
+          "1049",
+          "850"
+        ],
+        "treeIndex": 93
+      },
+      {
+        "value": [
+          "1050",
+          "500"
+        ],
+        "treeIndex": 90
+      }
+    ]
+  }
+}

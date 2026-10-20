@@ -1,11 +1,11 @@
 {
   "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-  "network": "hardhat",
+  "network": "localhost",
   "chainId": 31337,
   "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
   "epoch": 1,
   "root": "0xcb13618d53b00b87799b8ecbbda2d1cb3fe53dff33adc7f2d77ce5a969182f31",
   "totalLiabilities": "5651450",
-  "timestamp": 1792401657,
-  "deployedAt": "2026-10-19T09:20:56.016Z"
+  "timestamp": 1792511258,
+  "deployedAt": "2026-10-20T15:47:38.774Z"
 }

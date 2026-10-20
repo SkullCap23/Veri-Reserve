@@ -168,6 +168,11 @@ header {
   box-shadow: 0 0 6px var(--status-warning);
 }
 
+.indicator-dot.error {
+  background: var(--status-danger);
+  box-shadow: 0 0 6px var(--status-danger);
+}
+
 .btn-utility {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -281,7 +286,7 @@ header {
   margin: 1.25rem auto 3rem;
   padding: 0 1.75rem;
   display: grid;
-  grid-template-columns: 440px 1fr;
+  grid-template-columns: 460px 1fr;
   gap: 1.25rem;
 }
 
@@ -460,16 +465,13 @@ header {
   color: #000;
 }
 
-/* Forensic Tamper Box */
+/* Forensic Tamper Box & Modes (A3) */
 .tamper-control {
   background: rgba(239, 68, 68, 0.04);
   border: 1px solid rgba(239, 68, 68, 0.2);
   border-radius: var(--radius-sm);
   padding: 0.75rem 0.85rem;
-  margin: 1rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 1rem 0 0.5rem 0;
   transition: all 0.2s ease;
 }
 
@@ -478,9 +480,41 @@ header {
   border-color: rgba(239, 68, 68, 0.45);
 }
 
+.tamper-modes-bar {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tamper-mode-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-tertiary);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tamper-mode-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.tamper-mode-btn.active {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: var(--status-danger);
+  color: #fca5a5;
+  font-weight: 700;
+}
+
 .tamper-meta {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tamper-header {
@@ -496,7 +530,8 @@ header {
 .tamper-desc {
   font-size: 0.68rem;
   color: var(--text-tertiary);
-  margin-top: 0.15rem;
+  margin-top: 0.35rem;
+  line-height: 1.4;
 }
 
 /* Precision Switch */
@@ -590,7 +625,7 @@ input:checked + .switch-track:before {
 .btn-epoch-action {
   width: 100%;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px dashed var(--border-medium);
+  border: 1px solid var(--border-medium);
   color: var(--text-secondary);
   padding: 0.55rem;
   border-radius: var(--radius-sm);
@@ -600,12 +635,19 @@ input:checked + .switch-track:before {
   transition: all 0.15s ease;
 }
 
-.btn-epoch-action:hover {
-  background: rgba(255, 255, 255, 0.05);
+.btn-epoch-action:hover:not(:disabled) {
+  background: rgba(56, 189, 248, 0.1);
   color: #fff;
+  border-color: var(--brand-cyan-light);
 }
 
-/* Institutional Verdict Banners */
+.btn-epoch-action:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-style: solid;
+}
+
+/* Institutional Verdict Banners (R1 Path Clarity) */
 .audit-verdict-banner {
   border-radius: var(--radius-sm);
   padding: 1rem 1.15rem;
@@ -625,6 +667,12 @@ input:checked + .switch-track:before {
   border: 1px solid var(--status-danger-border);
 }
 
+.audit-verdict-banner.contract-error {
+  display: block;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid var(--status-warning-border);
+}
+
 .verdict-header {
   display: flex;
   align-items: center;
@@ -637,6 +685,7 @@ input:checked + .switch-track:before {
 
 .verified .verdict-header { color: #34d399; }
 .tampered .verdict-header { color: #f87171; }
+.contract-error .verdict-header { color: #fbbf24; }
 
 .verdict-explanation {
   font-size: 0.75rem;
@@ -646,18 +695,29 @@ input:checked + .switch-track:before {
 
 .verdict-meta-bar {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.6rem;
   margin-top: 0.5rem;
   font-size: 0.68rem;
   font-family: var(--font-mono);
   color: var(--text-tertiary);
+  flex-wrap: wrap;
 }
 
 .verdict-pill {
-  padding: 0.1rem 0.4rem;
+  padding: 0.15rem 0.45rem;
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.3);
   border: 1px solid var(--border-subtle);
+}
+
+.verdict-pill.onchain-call {
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+
+.verdict-pill.local-call {
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
 }
 
 /* Solvency & Balance Sheet Module */
